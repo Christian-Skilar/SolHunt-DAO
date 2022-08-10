@@ -1,0 +1,56 @@
+
+#sosials {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+footer {
+    background-color:  rgba(0, 0, 0, 0.8);
+    margin-top: 250px;
+}
+
+footer h2 {
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+footer div {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fa-brands {
+    font-size: 50px;
+    margin: 30px 15px;
+    transition: all 100ms ease-in-out;
+}
+
+.fa-discord {
+    color: #d0d0d0;
+}
+.fa-discord:hover {
+    color: #5865F2;
+}
+
+.fa-twitter {
+    color: #d0d0d0;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #fff;
+    text-align: right;
+    padding: 5px;
+    margin-top: 150px;
+    text-align: center;
+}

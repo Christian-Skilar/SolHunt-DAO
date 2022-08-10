@@ -1,0 +1,75 @@
+#profit {
+    text-align: center;
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 30px auto;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+}
+
+
+
+/* -------------- SLIDESHOW ---------------------- */
+
+
+.section-img-carusell {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.section-img-carusell img {
+  width: 300px;
+  height: 200px;
+}
+
+.section-img-carusell article {
+  display: flex;
+  width: 570%;
+  animation: bannermove 30s linear infinite;
+}
+
+
+.section-img-carusell ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.section-img-carusell li {
+  margin: 10px;
+}
+
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.calls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 900px;
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width:400px) {
+
+  .section-img-carusell article {
+    animation: bannermove 7s linear infinite;
+  }
+
+}
+
+  

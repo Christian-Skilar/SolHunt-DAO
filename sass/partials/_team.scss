@@ -1,0 +1,66 @@
+
+#team {
+    text-align: center;
+    padding-top: 100px;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    min-height: 90vh;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 30px;
+}
+
+.team-container div {
+    background-color: rgba(34,34,34,.5);
+    height: 500px;
+    max-width: 270px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.team-container h3 {
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.team-container div p {
+    padding: 0 5px;
+    margin: 15px 0;
+}
+
+.team-container .fa-brands {
+    color: #fff;
+    font-size: 30px;
+}
+
+.allign-bottom {
+    position: relative;
+}
+
+.t-logo-bottom {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+}
+
+.team-img {
+    width: 250px;
+}
+
+
+@media screen and (max-width:1229px) {
+
+    .team-container {
+        justify-content: center;
+    }
+
+}

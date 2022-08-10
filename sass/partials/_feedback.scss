@@ -1,0 +1,113 @@
+#feedback {
+    text-align: center;
+    padding-top: 100px;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px 0 30px;
+    margin: 0 auto;
+}
+
+.feedback-container ul li {
+    list-style: none;
+}
+
+.feedback-img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px;
+    padding: 0 30px;
+}
+
+#feedback-more {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    transition: all 200ms ease;
+}
+
+// --------------- SHOW HIDE BUTTON ---------------
+
+.read-more-state {
+    display: none;
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: 20px;
+    max-height: 999em;
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Show more';
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Show less';
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 30px auto;
+    padding: 15px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    z-index: 999;
+    transition: all 200ms ease;
+  }
+
+  .read-more-trigger:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      color: #000;
+  }
+
+// -----------------------------
+
+.center-text {
+    text-align: center;
+    margin-top: 40px !important;
+    background-color: #000;
+}
+
+.are-you-ready {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #000;
+
+}
+
+.fa-fire {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width:700px) {
+
+
+  }
