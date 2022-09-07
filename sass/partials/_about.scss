@@ -19,31 +19,18 @@
 
 .tekst-boks {
     width: 700px;
+    font-size: 19px;
 }
 
 .tekst-boks p {
     margin-top: 10px;
 }
 
-.verified-container {
-    display: flex;
-}
+@media screen and (max-width:500px) {
 
-.verified-container img {
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-}
-
-.verified-container h3 {
-    background-color: #000;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-@media screen and (max-width:700px) {
-    
-    .verified-container img {
-        margin-top: 10px;
+    #about {
+        text-align: left;
+        margin: 30px;
     }
+
 }

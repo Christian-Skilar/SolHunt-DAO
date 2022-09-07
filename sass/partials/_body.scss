@@ -11,10 +11,14 @@ body {
   color: #d0d0d0;
   font-family: "Avenir Next", "Avenir", sans-serif;
   background:url(/img/rm373batch2-08.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size:cover;
   background-position:center center;
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -24,9 +28,8 @@ h1, h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
     color: #fff;
-    text-align: center;
     padding-top: 100px;
-    max-width: 1200px;
+    max-width: 900px;
 }
 
 h3 {
@@ -49,5 +52,14 @@ h3 {
 
 .scrollToTopBtn img {
   width: 40px;
+}
+
+// ---------------- MOBILE breakpoint ----------------
+@media screen and (max-width: 500px) {
+  body {
+
+    background: #000 !important;
+  }
+  
 }
 

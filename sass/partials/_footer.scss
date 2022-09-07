@@ -36,7 +36,7 @@ footer div {
     color: #d0d0d0;
 }
 .fa-discord:hover {
-    color: #5865F2;
+    color: #7289DA;
 }
 
 .fa-twitter {
@@ -53,4 +53,18 @@ footer div {
     padding: 5px;
     margin-top: 150px;
     text-align: center;
+}
+
+
+// ---------------- MOBILE breakpoint ----------------
+@media screen and (max-width: 500px) {
+
+    .fa-discord {
+        color: #7289DA;
+    }
+    
+    .fa-twitter {
+        color: #1DA1F2;
+    }
+
 }

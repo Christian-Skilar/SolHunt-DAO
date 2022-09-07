@@ -6,20 +6,25 @@
   }
 
   .logo {
-      width: 300px;
+      width: 250px;
+  }
+
+  .header-area {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
   }
 
   .nav-container {
-    max-width: 1000px;
-    margin: 15px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 15px;
   }
   
   /* navbar regular css */
   .navbar-area {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: transparent;
+    background: #2C2F33;
   }
 
   .site-navbar {
@@ -27,11 +32,12 @@
     justify-content: space-between;
     align-items: center;
   }
+
   a.site-logo {
     font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
   .site-navbar ul {
@@ -49,7 +55,7 @@
     text-transform: uppercase;
   }
   .site-navbar ul li a:hover {
-    color:  #1DA1F2;
+    color:  #38BDF2;
   }
   
   
@@ -59,7 +65,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    height: 39px;
+    height: 40px;
     display: none;
   }
   .nav-toggler span, 
@@ -91,7 +97,7 @@
   
   
   /* mobile breakpoint */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1000px) {
     .nav-container {
       max-width: 720px;
     }
@@ -105,12 +111,12 @@
     .site-navbar ul {
       position: absolute;
       width: 100%;
-      height: calc(100vh - 90px);
+      height: calc(100vh - 60px);
       left: 0;
-      top: 90px;
+      top: 60px;
       flex-direction: column;
       align-items: center;
-      background-color: rgba(34,34,34,.9);
+      background-color: #000;
       max-height: 0;
       overflow: hidden;
       transition: .3s;

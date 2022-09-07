@@ -57,10 +57,22 @@
 }
 
 
+// ---------------- MOBILE breakpoint ----------------
+
 @media screen and (max-width:1229px) {
 
     .team-container {
         justify-content: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .team-container .fa-brands {
+        color: #1DA1F2;
     }
 
 }

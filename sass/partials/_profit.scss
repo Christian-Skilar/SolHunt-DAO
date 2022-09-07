@@ -1,6 +1,6 @@
 #profit {
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     max-width: 1200px;
     margin: 30px auto;
     border-bottom: 2px solid #fff;
@@ -8,68 +8,113 @@
 }
 
 
-
 /* -------------- SLIDESHOW ---------------------- */
 
 
-.section-img-carusell {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 100px;
-  overflow: hidden;
+#slidecontainer {
+	width: 90%;
+	overflow: hidden;
+	margin: 50px auto;
+  padding-top: 50px;
+	background: transparent;
+}
+ 
+/*photobanner*/
+ 
+.photobanner {
+	height: 200px;
+	width: 3000px;
 }
 
-.section-img-carusell img {
-  width: 300px;
+.img-slide {
+  display: inline-block;
   height: 200px;
 }
 
-.section-img-carusell article {
-  display: flex;
-  width: 570%;
-  animation: bannermove 30s linear infinite;
+
+/*keyframe animations*/
+.first {
+  animation: bannermove 15s linear infinite;
 }
-
-
-.section-img-carusell ul {
-  display: flex;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.section-img-carusell li {
-  margin: 10px;
-}
-
-
+ 
 @keyframes bannermove {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2000px;
+ }
+ 
 }
 
 .calls-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 900px;
-    padding: 50px 30px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+// ---------------- SLIDER ----------------
+
+.section-slider {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 90%;
+  max-width: 920px;
+  background: transparent;
+}
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+.slider .img-slider {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: block;
+}
+.slider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
+}
+.slider::-webkit-scrollbar-track {
+  background: transparent;
+}
+.section-slider:hover .slider::-webkit-scrollbar-thumb {
+  visibility: visible;
 }
 
 
+// ---------------- MOBILE breakpoint ----------------
+@media screen and (max-width: 767px) {
 
+  #slidecontainer {
+    width: 95%;
+    overflow: hidden;
+  }
 
-@media screen and (max-width:400px) {
-
-  .section-img-carusell article {
-    animation: bannermove 7s linear infinite;
+  .img-slide {
+    height: 150px;
   }
 
 }
 
-  
+@media screen and (max-width: 500px) {
+
+  #profit {
+    margin-left: 30px;
+  }
+
+}

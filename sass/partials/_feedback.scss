@@ -1,5 +1,4 @@
 #feedback {
-    text-align: center;
     padding-top: 100px;
     max-width: 1000px;
     margin: 30px auto;
@@ -12,8 +11,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 30px 0 30px;
+    padding: 100px 0;
     margin: 0 auto;
+    max-width: 1000px;
 }
 
 .feedback-container ul li {
@@ -22,9 +22,7 @@
 
 .feedback-img {
     width: 100%;
-    max-width: 1000px;
-    margin: 10px;
-    padding: 0 30px;
+    padding: 5px;
 }
 
 #feedback-more {
@@ -72,7 +70,7 @@
     margin: 30px auto;
     padding: 15px;
     color: #fff;
-    background-color: transparent;
+    background-color: #2C2F33;
     font-size: 25px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -81,25 +79,19 @@
   }
 
   .read-more-trigger:hover {
-      background-color: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.8);
-      color: #000;
+      background-color: #1DA1F2;
+      border: 1px solid #1DA1F2;
   }
 
 // -----------------------------
 
 .center-text {
-    text-align: center;
-    margin-top: 40px !important;
-    background-color: #000;
+    margin-top: 10px !important;
 }
 
 .are-you-ready {
     display: flex;
-    justify-content: center;
     margin-top: 10px;
-    background-color: #000;
-
 }
 
 .fa-fire {
@@ -107,7 +99,14 @@
     margin: 0 10px;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:500px) {
 
-
+    #feedback {
+      margin-left:30px;
   }
+
+  .read-more-trigger {
+    background-color: #1DA1F2;
+    border: 1px solid #1DA1F2;
+  }
+}

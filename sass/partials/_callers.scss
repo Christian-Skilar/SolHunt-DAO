@@ -1,0 +1,16 @@
+#callers {
+    text-align: center;
+    padding-top: 100px;
+    max-width: 1000px;
+    margin: 30px auto;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
+}
+
+.three-col {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
