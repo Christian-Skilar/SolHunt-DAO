@@ -8,17 +8,9 @@
     width: fit-content;
 }
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 30px;
-}
 
 .tekst-boks {
-    width: 700px;
+    width: 900px;
     font-size: 19px;
 }
 
@@ -30,7 +22,7 @@
 
     #about {
         text-align: left;
-        margin: 30px;
+        margin: 15px;
     }
 
 }

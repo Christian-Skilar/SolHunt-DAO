@@ -6,7 +6,7 @@
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
 }
 
 .header-area {
@@ -18,7 +18,7 @@
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -60,14 +60,18 @@ a.site-logo {
 .site-navbar ul li a {
   color: #fff;
   font-weight: 500;
+  font-size: 14px;
   padding: 20px;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .site-navbar ul li a:hover {
   color: #38BDF2;
+  margin-top: -2px;
 }
 
 /* nav-toggler css */
@@ -118,7 +122,7 @@ a.site-logo {
 }
 
 /* mobile breakpoint */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 950px) {
   .nav-container {
     max-width: 720px;
   }
@@ -170,6 +174,12 @@ a.site-logo {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 150px;
+  }
+}
+
 @font-face {
   font-family: japan;
   src: url(/font/Japanese.ttf);
@@ -203,6 +213,22 @@ h3 {
   color: #fff;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .scrollToTopBtn {
   position: fixed;
   border: none;
@@ -224,6 +250,15 @@ h3 {
   body {
     background: #000 !important;
   }
+  .container {
+    padding: 0 15px;
+  }
+  .scrollToTopBtn img {
+    width: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
 #about {
@@ -237,24 +272,8 @@ h3 {
   width: fit-content;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
 .tekst-boks {
-  width: 700px;
+  width: 900px;
   font-size: 19px;
 }
 
@@ -265,7 +284,7 @@ h3 {
 @media screen and (max-width: 500px) {
   #about {
     text-align: left;
-    margin: 30px;
+    margin: 15px;
   }
 }
 
@@ -341,9 +360,37 @@ h3 {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .team-container {
+    padding: 10px;
+    gap: 10px;
+  }
+  .team-container div {
+    height: 500px;
+    max-width: 45%;
+    padding: 10px;
+  }
+  .team-img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .team-container .fa-brands {
     color: #1DA1F2;
+  }
+  .team-container {
+    padding: 10px;
+    gap: 10px;
+  }
+  .team-container div {
+    height: 100%;
+    max-width: 85%;
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+  }
+  .team-img {
+    width: 100%;
   }
 }
 
@@ -358,16 +405,36 @@ h3 {
   width: fit-content;
 }
 
-.three-col {
+.four-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   max-width: 900px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 50px;
+}
+
+.four-col div {
+  min-width: 100px;
+  padding-bottom: 50px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .four-col div {
+    margin: 0;
+  }
+  .four-col div h3 {
+    font-size: 20px;
+  }
+  .four-col div p {
+    font-size: 15px;
+  }
 }
 
 #feedback {
@@ -396,7 +463,7 @@ h3 {
           align-items: center;
   padding: 100px 0;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 .feedback-container ul li {
@@ -474,31 +541,25 @@ h3 {
   margin-top: 10px !important;
 }
 
-.are-you-ready {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10px;
-}
-
-.fa-fire {
-  font-size: 20px;
-  margin: 0 10px;
-}
-
 @media screen and (max-width: 500px) {
   #feedback {
-    margin-left: 30px;
+    margin-left: 15px;
   }
   .read-more-trigger {
     background-color: #1DA1F2;
     border: 1px solid #1DA1F2;
   }
+  .read-more-trigger {
+    width: 170px;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 #profit {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 0;
   max-width: 1200px;
   margin: 30px auto;
   border-bottom: 2px solid #fff;
@@ -509,7 +570,7 @@ h3 {
 
 /* -------------- SLIDESHOW ---------------------- */
 #slidecontainer {
-  width: 90%;
+  width: 900px;
   overflow: hidden;
   margin: 50px auto;
   padding-top: 50px;
@@ -529,8 +590,8 @@ h3 {
 
 /*keyframe animations*/
 .first {
-  -webkit-animation: bannermove 15s linear infinite;
-          animation: bannermove 15s linear infinite;
+  -webkit-animation: bannermove 25s linear infinite;
+          animation: bannermove 25s linear infinite;
 }
 
 @-webkit-keyframes bannermove {
@@ -562,7 +623,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 50px 0;
   margin: 0 auto;
 }
@@ -570,8 +631,8 @@ h3 {
 .section-slider {
   margin: 0 auto;
   padding: 10px 0;
-  width: 90%;
-  max-width: 920px;
+  width: 100%;
+  max-width: 900px;
   background: transparent;
 }
 
@@ -591,7 +652,7 @@ h3 {
 .slider .img-slider {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 300px;
+  width: 250px;
   margin-right: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -624,11 +685,14 @@ h3 {
   .img-slide {
     height: 150px;
   }
+  .calls-container {
+    margin-top: -50px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   #profit {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -636,7 +700,7 @@ h3 {
   text-align: center;
   padding-top: 100px;
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 80px auto;
   border-bottom: 2px solid #fff;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -645,7 +709,7 @@ h3 {
 
 .payment-plan {
   display: block;
-  width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   padding-top: 50px;
 }
@@ -674,9 +738,13 @@ h3 {
   border: 1px solid #1DA1F2;
 }
 
-@media screen and (max-width: 550px) {
+.affiliate {
+  margin-top: 70px !important;
+}
+
+@media screen and (max-width: 750px) {
   .payment-plan {
-    width: 90%;
+    width: 95%;
   }
   .btn-payment {
     background-color: #1DA1F2;
@@ -684,7 +752,19 @@ h3 {
   }
 }
 
-#sosials {
+@media screen and (max-width: 500px) {
+  .btn-payment {
+    width: 170px;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 20px;
+  }
+  #membership {
+    margin-left: 15px;
+  }
+}
+
+#socials {
   text-align: center;
   margin: 0 auto;
   margin-top: 50px;

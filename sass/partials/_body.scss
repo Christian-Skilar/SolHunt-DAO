@@ -36,6 +36,15 @@ h3 {
   color: #fff;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 // Back to top btn
 
 .scrollToTopBtn {
@@ -60,6 +69,18 @@ h3 {
 
     background: #000 !important;
   }
+
+  .container {
+    padding: 0 15px;
+}
+
+.scrollToTopBtn img {
+  width: 30px;
+}
+
+p {
+  font-size: 16px;
+}
   
 }
 

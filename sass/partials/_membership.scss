@@ -2,14 +2,14 @@
     text-align: center;
     padding-top: 100px;
     max-width: 1000px;
-    margin: 30px auto;
+    margin:80px auto;
     border-bottom: 2px solid #fff;
     width: fit-content;
 }
 
 .payment-plan {
     display: block;
-    width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding-top: 50px;
 }
@@ -38,15 +38,19 @@
 
 }
 
+.affiliate {
+    margin-top: 70px !important;
+}
+
 
 
 // ---------------- MOBILE breakpoint ----------------
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
 
     .payment-plan {
-        width: 90%;
+        width: 95%;
     }
 
     .btn-payment {
@@ -55,3 +59,19 @@
     }
 
 }
+
+@media screen and (max-width: 500px) {
+
+    .btn-payment {
+        width: 170px;
+        margin: 30px auto;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    #membership {
+        margin-left: 15px;
+    }
+}
+
+

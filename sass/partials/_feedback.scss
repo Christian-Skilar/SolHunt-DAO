@@ -13,7 +13,7 @@
     align-items: center;
     padding: 100px 0;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 .feedback-container ul li {
@@ -89,24 +89,22 @@
     margin-top: 10px !important;
 }
 
-.are-you-ready {
-    display: flex;
-    margin-top: 10px;
-}
-
-.fa-fire {
-    font-size: 20px;
-    margin: 0 10px;
-}
 
 @media screen and (max-width:500px) {
 
     #feedback {
-      margin-left:30px;
+      margin-left:15px;
   }
 
   .read-more-trigger {
     background-color: #1DA1F2;
     border: 1px solid #1DA1F2;
+  }
+
+  .read-more-trigger {
+    width: 170px;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 20px;
   }
 }

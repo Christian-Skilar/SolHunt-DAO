@@ -1,6 +1,6 @@
 #profit {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 0;
     max-width: 1200px;
     margin: 30px auto;
     border-bottom: 2px solid #fff;
@@ -12,7 +12,7 @@
 
 
 #slidecontainer {
-	width: 90%;
+	width: 900px;
 	overflow: hidden;
 	margin: 50px auto;
   padding-top: 50px;
@@ -34,7 +34,7 @@
 
 /*keyframe animations*/
 .first {
-  animation: bannermove 15s linear infinite;
+  animation: bannermove 25s linear infinite;
 }
  
 @keyframes bannermove {
@@ -47,11 +47,14 @@
  
 }
 
+
+// ---------------- SCREENSHOTS ----------------
+
 .calls-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 900px;
   padding: 50px 0;
   margin: 0 auto;
 }
@@ -61,8 +64,8 @@
 .section-slider {
   margin: 0 auto;
   padding: 10px 0;
-  width: 90%;
-  max-width: 920px;
+  width: 100%;
+  max-width: 900px;
   background: transparent;
 }
 .slider {
@@ -75,7 +78,7 @@
 }
 .slider .img-slider {
   flex-shrink: 0;
-  width: 300px;
+  width: 250px;
   margin-right: 20px;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -109,12 +112,16 @@
     height: 150px;
   }
 
+  .calls-container {
+    margin-top: -50px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
 
   #profit {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 
 }

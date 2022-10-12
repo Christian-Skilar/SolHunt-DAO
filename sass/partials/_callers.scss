@@ -7,10 +7,33 @@
     width: fit-content;
 }
 
-.three-col {
+.four-col {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 900px;
     justify-content: space-evenly;
     margin-top: 50px;
+}
+
+.four-col div{
+    min-width: 100px;
+    padding-bottom: 50px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .four-col div{
+        margin: 0;
+    }
+
+    .four-col div h3{
+        font-size: 20px;
+    }
+    
+    .four-col div p{
+        font-size: 15px;
+    }
 }

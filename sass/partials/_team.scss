@@ -67,7 +67,25 @@
 
 }
 
+@media screen and (max-width:630px) {
 
+    .team-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .team-container div {
+        height: 500px;
+        max-width: 45%;
+        padding: 10px;
+    }
+
+    .team-img {
+        width: 100%;
+    }
+
+
+}
 
 @media screen and (max-width: 500px) {
 
@@ -75,4 +93,19 @@
         color: #1DA1F2;
     }
 
+    .team-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .team-container div {
+        height: 100%;
+        max-width: 85%;
+        margin-bottom: 30px;
+        padding-bottom: 60px;
+    }
+
+    .team-img {
+        width: 100%;
+    }
 }
