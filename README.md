@@ -1,3 +1,3 @@
-# SolHunt-DAO
+# Wall of Gains
 
-a website for the crypto/NFT group SolHunt that i am a founder of
+a website for the crypto/NFT group Wall of Gains that i am a founder of
